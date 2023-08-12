@@ -3,6 +3,7 @@
 import React from "react";
 import Adminsidemenu from "../components/Adminsidemenu";
 import Adminnavbar from "../components/Adminnavbar";
+import TableData from "../components/TableData";
 const Order = () => {
 	return (
 		<>
@@ -10,6 +11,9 @@ const Order = () => {
 				<Adminsidemenu />
 				<div className="overview">
 					<Adminnavbar />
+				</div>
+				<div className="ordertable">
+					<TableData />
 				</div>
 			</div>
 		</>

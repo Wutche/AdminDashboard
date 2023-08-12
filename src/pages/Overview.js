@@ -8,8 +8,7 @@ import Card from "../components/Card";
 import data from "../components/data";
 import Chart from "../components/Barchart";
 import plant from "../images/plant-pot.jpg";
-import TableData from "../components/TableData";
-import { NavLink } from "react-router-dom";
+
 const Overview = () => {
 	const cardItems = data.map((item) => {
 		return <Card key={item.id} {...item} />;
