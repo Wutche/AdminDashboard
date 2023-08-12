@@ -11,6 +11,7 @@ const TableData = () => {
 			productName: "Cactus",
 			payment: "$12.33",
 			Date: "01/12/2023",
+			status: "Pending",
 		},
 		{
 			id: 2,
@@ -18,6 +19,7 @@ const TableData = () => {
 			productName: "Cactus",
 			payment: "$12.33",
 			Date: "11/10/2023",
+			status: "Delivered",
 		},
 		{
 			id: 3,
@@ -25,6 +27,7 @@ const TableData = () => {
 			productName: "Cactus",
 			payment: "$12.33",
 			Date: "10/3/2023",
+			status: "Pending",
 		},
 		{
 			id: 4,
@@ -32,6 +35,7 @@ const TableData = () => {
 			productName: "Cactus",
 			payment: "$12.33",
 			Date: "12/12/2023",
+			status: "Cancelled",
 		},
 		{
 			id: 5,
@@ -39,6 +43,7 @@ const TableData = () => {
 			productName: "Cactus",
 			payment: "$12.33",
 			Date: "05/11/2023",
+			status: "Delivered",
 		},
 	];
 
@@ -49,6 +54,7 @@ const TableData = () => {
 			<td>{element.productName}</td>
 			<td>{element.payment}</td>
 			<td>{element.Date}</td>
+			<td>{element.status}</td>
 		</tr>
 	));
 
@@ -63,7 +69,6 @@ const TableData = () => {
 						<th>Payment</th>
 						<th>Date</th>
 						<th>Status</th>
-						<th>Total</th>
 					</tr>
 				</thead>
 				<tbody>{rows}</tbody>

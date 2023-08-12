@@ -2,7 +2,7 @@
 
 import { HiShoppingBag } from "react-icons/hi";
 import { FaShopware } from "react-icons/fa";
-import { FaCaravan } from "react-icons/fa";
+import { TbTruckDelivery } from "react-icons/tb";
 
 const orderData = [
 	{
@@ -25,9 +25,9 @@ const orderData = [
 
 	{
 		id: 3,
-		ordericons: FaCaravan,
+		ordericons: TbTruckDelivery,
 		number: 76,
-		title: "Total Dispatch",
+		title: "Total Delivered",
 		color: "rgba(0, 200, 171, 1)",
 		backgroundColor: "rgba(187, 251, 241, 1)",
 	},
