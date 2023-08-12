@@ -27,7 +27,7 @@ const Adminsidemenu = () => {
 						Overview
 					</NavLink>
 
-					<NavLink>
+					<NavLink to={"/order"}>
 						{" "}
 						<span>
 							{" "}

@@ -14,7 +14,7 @@
 .adminwrp {
 	display: flex;
 	gap: 10px;
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 .navitems {
@@ -71,6 +71,11 @@
 }
 
 /* <======= Overview page =========>*/
+
+.adminwrp {
+	background-color: rgb(253, 253, 253);
+}
+
 nav {
 	width: 100%;
 	display: flex;
@@ -79,6 +84,11 @@ nav {
 	/* background-color: black; */
 	gap: 20px;
 	padding: 5px 2%;
+}
+
+.adminsidemenu a {
+	color: black;
+	text-decoration: none;
 }
 
 .navaccounts {
@@ -109,12 +119,122 @@ nav {
 }
 
 .searchbar input {
-	background-color: rgb(248, 247, 247);
+	background-color: rgb(247, 247, 247);
 	height: 45px;
 	width: 100%;
+	text-indent: 15px;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	font-size: 15px;
+	font-family: "Poppins", sans-serif;
 }
 
 .accountname p {
 	font-size: 13px;
 	color: rgb(141, 141, 141);
 }
+
+.hero {
+	width: 100%;
+	padding: 5px 2%;
+}
+
+.hero h1 {
+	font-weight: 600;
+	font-size: 25px;
+}
+
+.carditems {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.card {
+	background-color: rgba(228, 255, 239, 1);
+	height: 150px;
+	width: 35%;
+	padding: 20px 2%;
+	border-radius: 20px;
+}
+
+.card:nth-child(2) {
+	background-color: rgba(232, 238, 249, 1);
+}
+
+.card:nth-child(3) {
+	background-color: rgba(255, 238, 230, 1);
+}
+
+.card h1 {
+	font-weight: 600;
+	padding-top: 10px;
+}
+
+.card p {
+	color: rgb(114, 114, 114);
+	font-size: 13px;
+}
+
+.card span {
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	/* padding: 20px 20px; */
+}
+
+.chartelmnts {
+	margin-top: 2rem;
+	display: flex;
+	gap: 35px;
+}
+
+.chart {
+	width: 60%;
+	height: 350px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* background-color: rgb(241, 241, 241); */
+}
+
+.profile img {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+}
+
+.accessorieswrp {
+	background-color: rgb(245, 245, 245);
+	width: 40%;
+	padding: 10px 2%;
+	border-radius: 20px;
+}
+
+.accessory {
+	width: 100%;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+.profileimg {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.adchart {
+	width: 100%;
+}
+
