@@ -18,7 +18,7 @@ const Adminsidemenu = () => {
 				<Logo />
 
 				<div className="navlinks">
-					<NavLink to={"/"}>
+					<NavLink to={"/overview"}>
 						{" "}
 						<span>
 							{" "}

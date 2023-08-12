@@ -6,12 +6,14 @@ import "./App.css";
 import Adminroot from "./layouts/Adminroot";
 import Overview from "./pages/Overview";
 import Order from "./pages/Order";
+import Login from "./pages/Login";
 function App() {
 	return (
 		<>
 			<Router>
 				<Routes>
-					<Route path="/" element={<Overview />} />
+					<Route path="/" element={<Login />} />
+					<Route path="/overview" element={<Overview />} />
 					<Route path="/order" element={<Order />} />
 				</Routes>
 			</Router>
