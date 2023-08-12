@@ -63,7 +63,7 @@ const Adminsidemenu = () => {
 			</div>
 
 			<div className="settings">
-				<NavLink>
+				<NavLink to={"/settings"}>
 					{" "}
 					<span>
 						{" "}

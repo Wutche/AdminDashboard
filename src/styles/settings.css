@@ -1,0 +1,225 @@
+/** @format */
+
+.adminsidemenu {
+	position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.settingswrp {
+	margin-top: 70px;
+	margin-left: 260px;
+	padding: 40px 2%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+}
+.overview .profile {
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+	width: 45%;
+}
+.overview .profile .avatar {
+	border-radius: 100%;
+	width: 150px;
+	height: 150px;
+	color: red;
+	border: 1px solid lightgray;
+}
+.overview .profile .profileInfo {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3px;
+}
+.overview .profile .profileInfo h2 {
+	font-size: 35px;
+	font-family: "Lobster", cursive;
+	font-weight: 300;
+}
+.overview .companySettings {
+	display: flex;
+	background-color: white;
+	padding: 40px 30px;
+	border-radius: 20px;
+	justify-content: space-between;
+	column-gap: 5%;
+}
+.overview .companySettings .companyInfo {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+.overview .companySettings .companyInfo h2 {
+	font-size: 23px;
+}
+.overview .companySettings .companyInfo p {
+	font-size: 14px;
+	color: rgb(104, 104, 104);
+	line-height: 20px;
+}
+.overview .companySettings form {
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+.overview .companySettings form .inputWrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3px;
+}
+.overview .companySettings form .inputWrapper label {
+	font-size: 14px;
+}
+.overview .companySettings form .inputWrapper input {
+	padding: 10px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+.overview .companySettings form .inputWrapper select {
+	padding: 10px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+.overview .companySettings form button {
+	width: 100%;
+	padding: 10px;
+	border: 0px;
+	background-color: rgb(26, 19, 3);
+	color: white;
+	border-radius: 5px;
+}
+.overview .companySettings form button:hover {
+	cursor: pointer;
+	background-color: rgb(27, 27, 26);
+	color: rgb(255, 255, 255);
+	transition: 500ms;
+}
+.overview .companySettings form .inputContainer {
+	display: flex;
+	column-gap: 3%;
+}
+.overview .companySettings form .inputContainer .inputWrapper {
+	width: 50%;
+}
+.overview .companySettings form .imagePreview {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+.overview .companySettings form .imagePreview img {
+	width: 300px;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 10px;
+	border: 1px solid gray;
+}
+
+.hide {
+	display: none;
+}
+
+@media (max-width: 1300px) {
+	.overview {
+		padding: 40px;
+	}
+	.overview .profile .avatar {
+		width: 120px;
+		height: 120px;
+	}
+	.overview .profile .profileInfo h2 {
+		font-size: 25px;
+	}
+	.overview .companySettings .companyInfo h2 {
+		font-size: 22px;
+	}
+	.overview .companySettings form .inputWrapper label {
+		font-size: 13px;
+	}
+	.overview .companySettings form .inputWrapper input {
+		padding: 8px 10px;
+	}
+	.overview .companySettings form .inputWrapper select {
+		padding: 8px 10px;
+	}
+}
+@media (max-width: 1000px) {
+	.overview {
+		margin-left: 0px;
+		padding: 30px 3%;
+	}
+}
+@media (max-width: 750px) {
+	.overview .companySettings {
+		flex-direction: column;
+		row-gap: 30px;
+	}
+	.overview .companySettings .companyInfo {
+		width: 100%;
+	}
+	.overview .companySettings form {
+		width: 100%;
+	}
+}
+@media (max-width: 500px) {
+	.overview .profile .avatar {
+		width: 100px;
+		height: 100px;
+	}
+	.overview .profile .profileInfo h2 {
+		font-size: 22px;
+	}
+	.overview .profile .profileInfo p {
+		font-size: 13px;
+	}
+	.overview .companySettings {
+		padding: 20px;
+	}
+	.overview .companySettings .companyInfo h2 {
+		font-size: 20px;
+	}
+	.overview .companySettings .companyInfo p {
+		font-size: 13px;
+	}
+}
+@media (max-width: 400px) {
+	.overview .profile {
+		column-gap: 10px;
+	}
+	.overview .profile .avatar {
+		width: 100px;
+		height: 100px;
+	}
+	.overview .profile .profileInfo h2 {
+		font-size: 21px;
+	}
+	.overview .companySettings {
+		padding: 20px;
+		row-gap: 20px;
+	}
+	.overview .companySettings .companyInfo h2 {
+		font-size: 18px;
+	}
+	.overview .companySettings form {
+		row-gap: 15px;
+	}
+	.overview .companySettings form .inputContainer {
+		flex-direction: column;
+		row-gap: 15px;
+	}
+	.overview .companySettings form .inputContainer .inputWrapper {
+		width: 100%;
+	}
+	.overview .companySettings form .imagePreview img {
+		width: 100%;
+		height: 230px;
+	}
+}
