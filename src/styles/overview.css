@@ -1,0 +1,120 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.logo h1 {
+	font-family: "Lobster", cursive;
+	font-weight: 300;
+}
+
+.adminwrp {
+	display: flex;
+	gap: 10px;
+	height: 100vh;
+}
+
+.navitems {
+	display: flex;
+	flex-direction: column;
+}
+
+.adminsidemenu {
+	background-color: rgb(250, 250, 250);
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 5px 3%;
+}
+
+.navlinks {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	margin-top: 10rem;
+}
+
+.navlinks a {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.navlinks a span {
+	font-size: 25px;
+}
+
+.settings {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+	gap: 25px;
+}
+
+.settings a {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.settings a span {
+	font-size: 25px;
+}
+
+.overview {
+	width: 80%;
+	/* background-color: blue; */
+}
+
+/* <======= Overview page =========>*/
+nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* background-color: black; */
+	gap: 20px;
+	padding: 5px 2%;
+}
+
+.navaccounts {
+	/* background-color: aquamarine; */
+	width: 20%;
+	display: flex;
+	gap: 10px;
+	padding-top: 10px;
+}
+
+.img {
+	width: 25%;
+}
+
+.img img {
+	width: 100%;
+	border-radius: 100%;
+}
+
+.accountname h1 {
+	font-size: 18px;
+	font-size: 600;
+}
+
+.searchbar {
+	width: 50%;
+	text-indent: 20px;
+}
+
+.searchbar input {
+	background-color: rgb(248, 247, 247);
+	height: 45px;
+	width: 100%;
+}
+
+.accountname p {
+	font-size: 13px;
+	color: rgb(141, 141, 141);
+}
