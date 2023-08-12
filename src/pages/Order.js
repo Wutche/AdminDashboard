@@ -2,13 +2,15 @@
 
 import React from "react";
 import Adminsidemenu from "../components/Adminsidemenu";
+import Adminnavbar from "../components/Adminnavbar";
 const Order = () => {
 	return (
 		<>
-			<div className="orderwrp">
+			<div className="adminwrp">
 				<Adminsidemenu />
-        
-				<h1>Orders</h1>
+				<div className="overview">
+					<Adminnavbar />
+				</div>
 			</div>
 		</>
 	);

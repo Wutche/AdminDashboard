@@ -29,6 +29,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 5px 3%;
+	height: 100vb;
 }
 
 .navlinks {
@@ -109,8 +110,8 @@ nav {
 }
 
 .accountname h1 {
-	font-size: 18px;
-	font-size: 600;
+	font-size: 20px;
+	font-size: 500;
 }
 
 .searchbar {
@@ -237,4 +238,3 @@ nav {
 .adchart {
 	width: 100%;
 }
-
