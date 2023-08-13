@@ -4,13 +4,14 @@ import React from "react";
 import { Table, Avatar } from "@mantine/core";
 import { AiOutlineEdit } from "react-icons/ai";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import inventoryport from "../images/portrait.jpg";
 
 const Inventorytable = () => {
 	const elements = [
 		{
 			id: 1342,
 			productName: "Cactus",
-			Image: "",
+			Image: inventoryport,
 			payment: "$12.33",
 			category: "flowering",
 			description: "Lorem ipsum dolor sit amet, consectetur adipiscing el",
@@ -22,7 +23,7 @@ const Inventorytable = () => {
 		{
 			id: 1542,
 			productName: "Cactus",
-			Image: "",
+			Image: inventoryport,
 			payment: "$12.33",
 			category: "non-flowering",
 			description: "Lorem ipsum dolor sit amet, consectetur adipiscing el",
@@ -34,7 +35,7 @@ const Inventorytable = () => {
 		{
 			id: 4345,
 			productName: "Cactus",
-			image: "",
+			Image: inventoryport,
 			payment: "$12.33",
 			category: "indoor",
 			description: "Lorem ipsum dolor sit amet, consectetur adipiscing el",
@@ -46,7 +47,7 @@ const Inventorytable = () => {
 		{
 			id: 3162,
 			productName: "Cactus",
-			image: "",
+			Image: inventoryport,
 			payment: "$12.33",
 			category: "outdoor",
 			description: "Lorem ipsum dolor sit amet, consectetur adipiscing el",
@@ -58,7 +59,7 @@ const Inventorytable = () => {
 		{
 			id: 3810,
 			productName: "Cactus",
-			image: "",
+			Image: inventoryport,
 			payment: "$12.33",
 			category: "succulents",
 			description: "Lorem ipsum dolor sit amet, consectetur adipiscing el",
@@ -73,7 +74,9 @@ const Inventorytable = () => {
 		<tr key={element.name}>
 			<td>{`#${element.id}`}</td>
 			<td>{element.productName}</td>
-			<td>{element.image}</td>
+			<td>
+				<Avatar size={26} src={element.Image} radius={26} />
+			</td>
 			<td>{element.payment}</td>
 			<td>{element.category}</td>
 			<td>{element.Date}</td>

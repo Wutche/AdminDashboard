@@ -6,7 +6,7 @@ import { BsImage } from "react-icons/bs";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import Adminsidemenu from "../components/Adminsidemenu";
-import "../styles/product.css"
+import "../styles/product.css";
 
 const AddProduct = () => {
 	const navigate = useNavigate();
@@ -30,7 +30,7 @@ const AddProduct = () => {
 	};
 
 	return (
-		<div className="adminwrp">
+		<div className="adminwrp addprdrp">
 			<Adminsidemenu />
 			<div className="overview addproductwrp">
 				<div className="pageInfo">
@@ -43,7 +43,7 @@ const AddProduct = () => {
 						<div className="baseInformation">
 							<h2>Base Information</h2>
 							<div className="inputWrapper">
-								<label htmlFor="">Title</label>
+								<label htmlFor="">Name</label>
 								<input type="text" />
 							</div>
 							<div className="inputWrapper">
@@ -52,7 +52,12 @@ const AddProduct = () => {
 									type="file"
 									accept="image/*"
 									onChange={handleImageChange}
+									className="file"
 								/>
+								<div className="inputWrapper">
+									<label htmlFor="">Date</label>
+									<input type="date" />
+								</div>
 							</div>
 							<div className="inputWrapper">
 								<label htmlFor="">Description</label>
@@ -69,27 +74,6 @@ const AddProduct = () => {
 								<div className="inputWrapper">
 									<label htmlFor="">Price</label>
 									<input type="text" />
-								</div>
-								<div className="inputWrapper">
-									<label htmlFor="">Size: </label>
-									<select name="" id="">
-										<option value=""></option>
-										<option value="S">S</option>
-										<option value="M">M</option>
-										<option value="L">L</option>
-										<option value="XL">XL</option>
-										<option value="XXL">XXL</option>
-									</select>
-								</div>
-							</div>
-							<div className="inputContainer">
-								<div className="inputWrapper">
-									<label htmlFor="">Brand</label>
-									<input type="text" />
-								</div>
-								<div className="inputWrapper">
-									<label htmlFor="">Color</label>
-									<input type="text" name="" id="" />
 								</div>
 							</div>
 						</div>

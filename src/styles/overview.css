@@ -74,10 +74,6 @@
 
 /* <======= Overview page =========>*/
 
-.adminwrp {
-	background-color: rgb(253, 253, 253);
-}
-
 nav {
 	width: 100%;
 	display: flex;
