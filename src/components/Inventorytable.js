@@ -23,68 +23,6 @@ const Inventorytable = () => {
 
 		console.log(product)
 	}, [])
-	const elements = [
-		{
-			id: 1342,
-			productName: "Cactus",
-			Image: inventoryport,
-			payment: "$12.33",
-			category: "flowering",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing el",
-			Date: "01/12/2023",
-			Availability: "Out of Stock",
-			inventoryEditICon: AiOutlineEdit,
-			inventoryDeleteICon: RiDeleteBin6Line,
-		},
-		{
-			id: 1542,
-			productName: "Cactus",
-			Image: inventoryport,
-			payment: "$12.33",
-			category: "non-flowering",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing el",
-			Date: "11/10/2023",
-			Availability: "In Stock",
-			inventoryEditICon: AiOutlineEdit,
-			inventoryDeleteICon: RiDeleteBin6Line,
-		},
-		{
-			id: 4345,
-			productName: "Cactus",
-			Image: inventoryport,
-			payment: "$12.33",
-			category: "indoor",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing el",
-			Date: "10/3/2023",
-			Availability: "Out Of stock",
-			inventoryEditICon: AiOutlineEdit,
-			inventoryDeleteICon: RiDeleteBin6Line,
-		},
-		{
-			id: 3162,
-			productName: "Cactus",
-			Image: inventoryport,
-			payment: "$12.33",
-			category: "outdoor",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing el",
-			Date: "12/12/2023",
-			Availability: "In Stock",
-			inventoryEditICon: AiOutlineEdit,
-			inventoryDeleteICon: RiDeleteBin6Line,
-		},
-		{
-			id: 3810,
-			productName: "Cactus",
-			Image: inventoryport,
-			payment: "$12.33",
-			category: "succulents",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing el",
-			Date: "05/11/2023",
-			Availability: "In Stock",
-			inventoryEditICon: AiOutlineEdit,
-			inventoryDeleteICon: RiDeleteBin6Line,
-		},
-	];
 
 	const handleEdit = (id) => {
 		Cookies.set("PRODUCT_ID", id)
@@ -92,7 +30,7 @@ const Inventorytable = () => {
 	const handleDelete = (id) => {
 		Cookies.set("PRODUCT_ID", id)
 	}
-	const rows = elements.map((element) => (
+	const rows = product.map((element) => (
 		<tr key={element.name}>
 			<td>{`#${element.productId}`}</td>
 			<td>{element.productName}</td>
