@@ -1,13 +1,17 @@
 /** @format */
 
-import React from "react";
+
 import Adminnavbar from "../components/Adminnavbar";
 import Adminsidemenu from "../components/Adminsidemenu";
 import "../styles/inventory.css";
 import { NavLink } from "react-router-dom";
 import Inventorytable from "../components/Inventorytable";
+import instance from "../config/api";
+import Cookies from "js-cookie";
 
 const Inventory = () => {
+	
+
 	return (
 		<div className="adminwrp">
 			<Adminsidemenu />

@@ -1,12 +1,28 @@
 /** @format */
-
 import React from "react";
+import { useEffect, useState } from "react";
 import { Table, Avatar } from "@mantine/core";
 import { AiOutlineEdit } from "react-icons/ai";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import inventoryport from "../images/portrait.jpg";
+import Cookies from "js-cookie";
+import instance from "../config/api";
 
 const Inventorytable = () => {
+	const [product, setProduct] = useState([])
+
+	useEffect(() => {
+		instance.get(`/api/v1/user/getAllProducts`, {
+			headers: {
+				Authorization: `Bearer ${Cookies.get("ADMIN_TOKEN")}`
+			}
+		}).then((res) => {
+			console.log(res.data.content)
+			setProduct(res.data.content)
+		})
+
+		console.log(product)
+	}, [])
 	const elements = [
 		{
 			id: 1342,
@@ -70,26 +86,34 @@ const Inventorytable = () => {
 		},
 	];
 
+	const handleEdit = (id) => {
+		Cookies.set("PRODUCT_ID", id)
+	}
+	const handleDelete = (id) => {
+		Cookies.set("PRODUCT_ID", id)
+	}
 	const rows = elements.map((element) => (
 		<tr key={element.name}>
-			<td>{`#${element.id}`}</td>
+			<td>{`#${element.productId}`}</td>
 			<td>{element.productName}</td>
 			<td>
-				<Avatar size={26} src={element.Image} radius={26} />
+				<Avatar size={26} src={element.image} radius={26} />
 			</td>
-			<td>{element.payment}</td>
-			<td>{element.category}</td>
-			<td>{element.Date}</td>
+			<td>{element.lightLevel}</td>
+			<td>{element.waterzRequirement}</td>
+			<td>{element.growthHabit}</td>
 			<td>{element.description}</td>
 			<td>{element.Availability}</td>
-			<td>
+			<td>{element.quantity}</td>
+			<td>{element.categoryName}</td>
+			<td onClick={() => handleEdit(element.productId)}>
 				<element.inventoryEditICon
 					cursor="pointer"
 					size="20px"
 					color="rgb(11, 102, 11, 1)"
 				/>
 			</td>
-			<td>
+			<td onClick={() => handleDelete(element.productId)}>
 				{" "}
 				<element.inventoryDeleteICon
 					cursor="pointer"
@@ -99,7 +123,7 @@ const Inventorytable = () => {
 			</td>
 		</tr>
 	));
-	return (
+	return <>
 		<div className="inventorytable">
 			<div className="inventoryfilter">
 				<select name="Filter" id="filter">
@@ -127,7 +151,7 @@ const Inventorytable = () => {
 				<tbody>{rows}</tbody>
 			</Table>
 		</div>
-	);
+		</>;
 };
 
 export default Inventorytable;

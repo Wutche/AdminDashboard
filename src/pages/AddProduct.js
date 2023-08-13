@@ -6,9 +6,20 @@ import { BsImage } from "react-icons/bs";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import Adminsidemenu from "../components/Adminsidemenu";
-import "../styles/product.css";
+import "../styles/addproduct.css";
 
 const AddProduct = () => {
+	const [product, setProduct] = useState({
+		"productName": "J",
+		"growthHabit": "",
+		"lightLevel": "",
+		"waterRequirements": "",
+		"quantity": 0,
+		"description": "",
+		"productType": "",
+		"productPrice": 0,
+		"categoryName": ""
+	})
 	const navigate = useNavigate();
 
 	const [previewImage, setPreviewImage] = useState(null);
@@ -43,21 +54,8 @@ const AddProduct = () => {
 						<div className="baseInformation">
 							<h2>Base Information</h2>
 							<div className="inputWrapper">
-								<label htmlFor="">Name</label>
+								<label htmlFor="">Product Name</label>
 								<input type="text" />
-							</div>
-							<div className="inputWrapper">
-								<label htmlFor="">Image</label>
-								<input
-									type="file"
-									accept="image/*"
-									onChange={handleImageChange}
-									className="file"
-								/>
-								<div className="inputWrapper">
-									<label htmlFor="">Date</label>
-									<input type="date" />
-								</div>
 							</div>
 							<div className="inputWrapper">
 								<label htmlFor="">Description</label>
@@ -66,14 +64,37 @@ const AddProduct = () => {
 						</div>
 						<div className="details">
 							<h2>Details</h2>
-							<div className="inputWrapper">
-								<label htmlFor="">Category</label>
-								<input type="text" />
+							<div className="inputContainer">
+								<div className="inputWrapper">
+									<label htmlFor="">Light Level</label>
+									<input type="text" />
+								</div>
+								<div className="inputWrapper">
+									<label htmlFor="">Water Requirement</label>
+									<input type="text" />
+								</div>
 							</div>
 							<div className="inputContainer">
 								<div className="inputWrapper">
-									<label htmlFor="">Price</label>
+									<label htmlFor="">Growth Habit</label>
 									<input type="text" />
+								</div>
+								<div className="inputWrapper">
+									<label htmlFor="">Quanity Available</label>
+									<input type="text" />
+								</div>
+							</div>
+							<div className="inputContainer">
+								<div className="inputWrapper">
+									<label htmlFor="">Product Price</label>
+									<input type="text" />
+								</div>
+								<div className="inputWrapper">
+									<label htmlFor="">Product Type</label>
+									<select name="" id="">
+										<option value="PLANT">PLANT</option>
+										<option value="ACCESSORIES">ACCESSORIES</option>
+									</select>
 								</div>
 							</div>
 						</div>
@@ -83,14 +104,7 @@ const AddProduct = () => {
 						</div>
 					</div>
 
-					<div className="rightAdd">
-						<div className="imageWrap">
-							<h2>Image Preview</h2>
-							<div className="image">
-								{previewImage ? <img src={previewImage} alt="" /> : <BsImage />}
-							</div>
-						</div>
-					</div>
+					
 				</form>
 			</div>
 		</div>
