@@ -45,7 +45,7 @@ const Adminsidemenu = () => {
 						Inventory
 					</NavLink>
 
-					<NavLink>
+					<NavLink to="/user">
 						{" "}
 						<span>
 							<HiUserGroup />
