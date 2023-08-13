@@ -26,21 +26,21 @@ const Settings = () => {
 	};
 
 	return (
-		<div className="adminwrp">
+		<div className="adminwrp settingswrp">
 			<Adminsidemenu />
 			<div className="overview settingswrp">
 				<div className="profile">
 					<Avatar color="orange" className="avatar"></Avatar>
 					<div className="profileInfo">
 						<h2>PlantNest</h2>
-						<p>Entertainment Industry</p>
+						<p>Delivering Plants, Delivering Happiness</p>
 					</div>
 				</div>
 
 				<div className="companySettings">
 					<div className="companyInfo">
-						<h2>Company</h2>
-						<p>Edit and save your company details here</p>
+						<h2>Profile</h2>
+						<p>Edit and save your profile details here</p>
 					</div>
 					<form action="">
 						<div className="inputContainer">
@@ -53,24 +53,14 @@ const Settings = () => {
 								<input type="text" />
 							</div>
 						</div>
-						<div className="inputContainer">
-							<div className="inputWrapper">
-								<label htmlFor="">Company Name:</label>
-								<input type="text" />
-							</div>
-							<div className="inputWrapper">
-								<label htmlFor="">Company Phone Number:</label>
-								<input type="email" />
-							</div>
-						</div>
 						<div className="inputWrapper">
-							<label htmlFor="">Company Email Address:</label>
+							<label htmlFor="">Email Address:</label>
 							<input type="email" />
 						</div>
-						<div className="inputWrapper">
-							<label htmlFor="">Company Street Address:</label>
+						{/* <div className="inputWrapper">
+							<label htmlFor="">Street Address:</label>
 							<input type="email" />
-						</div>
+						</div> */}
 						<div className="inputContainer">
 							<div className="inputWrapper">
 								<label htmlFor="">State:</label>
@@ -91,8 +81,8 @@ const Settings = () => {
 
 				<div className="companySettings">
 					<div className="companyInfo">
-						<h2>Company Picture</h2>
-						<p>Edit and save your company picture here</p>
+						<h2>Profile Picture</h2>
+						<p>Edit and save your profile picture here</p>
 					</div>
 
 					<form action="">
