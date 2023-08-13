@@ -1,0 +1,23 @@
+.userdetails {
+  padding: 0px 3%;
+}
+
+.userdetails h1{
+  font-family: "Lobster", cursive;
+  font-weight: 300;
+}
+
+.rgstrdusrtbl {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 5%;
+  width: 100%;
+}
+
+.pagination {
+  margin-top: 1rem;
+  width: 100%;
+}
