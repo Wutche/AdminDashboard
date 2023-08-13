@@ -1,9 +1,7 @@
 /** @format */
 
-import React, { useState, useEffect } from "react";
-import { Table, Avatar, Pagination, Group, Box } from "@mantine/core";
-import { DataTable } from "mantine-datatable";
-import dayjs from "dayjs";
+import React from "react";
+import { Table, Avatar, Pagination, Group } from "@mantine/core";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import inventoryport from "../images/portrait.jpg";
 
@@ -192,15 +190,6 @@ const Registereduser = () => {
 			</td>
 		</tr>
 	));
-
-	const [pageSize, setPageSize] = useState(PAGE_SIZES[1]);
-
-	useEffect(() => {
-		setPage(1);
-	}, [pageSize]);
-
-	const [page, setPage] = useState(1);
-	const [records, setRecords] = useState(elements.slice(0, pageSize));
 
 	return (
 		<div className="rgstrdusrtbl">
