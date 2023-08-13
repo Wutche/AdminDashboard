@@ -53,6 +53,11 @@
 	border: 1px solid lightgray;
 	background-color: white;
 }
+.addproductwrp form .leftAdd .baseInformation .inputWrapper select {
+	padding: 10px;
+	border: 1px solid lightgray;
+	background-color: white;
+}
 .addproductwrp form .leftAdd .baseInformation .inputWrapper textarea {
 	padding: 10px;
 	border: 1px solid lightgray;

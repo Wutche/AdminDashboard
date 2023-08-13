@@ -10,6 +10,7 @@ import "../styles/addproduct.css";
 import instance from "../config/api";
 import Swal from "sweetalert2";
 import Cookies from "js-cookie";
+import axios from "axios";
 
 const AddProduct = () => {
 	const [product, setProduct] = useState({
@@ -21,7 +22,7 @@ const AddProduct = () => {
 		"description": "",
 		"productType": "",
 		"productPrice": 0,
-		"categoryName": ""
+		"category": ""
 	})
 	const [status, setStatus] = useState(true)
 	const navigate = useNavigate();
@@ -29,27 +30,37 @@ const AddProduct = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault()
 		setStatus(false)
+		if(product.productType == ""){
+			setStatus(true)
+                return Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: "Product Type can not be null"
+                  });
+		}
 
-		instance.post("/api/v1/admin/create-product", {product}, {
+		instance.post("/api/v1/admin/create-product", {...product},{
 			headers: {
 				Authorization: `Bearer ${Cookies.get("ADMIN_TOKEN")}`
 			}
 		})
 		.then((res) => {
+			console.log(product)
             console.log(res)
-            if(res.status === 401){
+			console.log(res.status)
+            if(res.status !== 201){
                 setStatus(true)
                 return Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
-                    text: "User does not exist"
+                    text: res.data
                   });
             }else{
                 setStatus(true)
                 Swal.fire({
                     icon: 'success',
                     title: 'Success',
-                    text: "Login Successfull",
+                    text: "Product Created Successfully",
                     showConfirmButton: false,
                     timer: 1500
                 });
@@ -107,7 +118,14 @@ const AddProduct = () => {
 							</div>
 							<div className="inputWrapper">
 								<label htmlFor="">Category Name</label>
-								<input name="" id=""  value={product.categoryName}  onChange={(e) => setProduct({...product, categoryName: e.target.value})}/>
+								<select name="" id=""  value={product.category}  onChange={(e) => setProduct({...product, category: e.target.value})}>
+									<option value="Succulent">Succulents</option>
+									<option value="Flowering">Flowering</option>
+									<option value="Flowering">Indoor</option>
+									<option value="Flowering">Outdoor</option>
+									<option value="Flowering">Medcinal</option>
+									<option value="Non-Flowering">Non-Flowering</option>
+								</select>
 							</div>
 							<div className="inputWrapper">
 								<label htmlFor="">Description</label>
@@ -144,6 +162,7 @@ const AddProduct = () => {
 								<div className="inputWrapper">
 									<label htmlFor="">Product Type</label>
 									<select name="" id="" value={product.productType} onChange={(e) => setProduct({...product, productType: e.target.value})}>
+										<option value=""></option>
 										<option value="PLANT">PLANT</option>
 										<option value="ACCESSORIES">ACCESSORIES</option>
 									</select>

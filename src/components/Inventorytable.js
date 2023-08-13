@@ -38,7 +38,7 @@ const Inventorytable = () => {
 				<Avatar size={26} src={element.image} radius={26} />
 			</td>
 			<td>{element.lightLevel}</td>
-			<td>{element.waterzRequirement}</td>
+			<td>{element.waterRequirement}</td>
 			<td>{element.growthHabit}</td>
 			<td>{element.description}</td>
 			<td>{element.Availability}</td>
