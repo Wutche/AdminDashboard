@@ -23,9 +23,12 @@
 		"@tiptap/extension-link": "^2.0.4",
 		"@tiptap/react": "^2.0.4",
 		"@tiptap/starter-kit": "^2.0.4",
+		"axios": "^1.4.0",
 		"dayjs": "^1.11.9",
 		"embla-carousel-react": "^7.1.0",
+		"js-cookie": "^3.0.5",
 		"react": "^18.2.0",
+		"react-data-table-component": "^7.5.3",
 		"react-dom": "^18.2.0",
 		"react-icons": "^4.10.1",
 		"react-router-dom": "^6.15.0",
@@ -33,6 +36,7 @@
 		"recharts": "^2.7.3",
 		"sass": "^1.65.1",
 		"sass-loader": "^13.3.2",
+		"sweetalert2": "^11.7.22",
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {

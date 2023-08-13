@@ -4,6 +4,8 @@ import React from "react";
 import { Table, Avatar, Pagination, Group } from "@mantine/core";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import inventoryport from "../images/portrait.jpg";
+
+const PAGE_SIZES = [10, 15, 20];
 const Registereduser = () => {
 	const elements = [
 		{
@@ -40,6 +42,126 @@ const Registereduser = () => {
 		},
 		{
 			id: 5,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 6,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 7,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 7,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 9,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 10,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 11,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 12,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 13,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 14,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 15,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 16,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 17,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 18,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 19,
+			Image: inventoryport,
+			User: "Fortune",
+			email: "fortune@gmail.com",
+
+			inventoryDeleteICon: RiDeleteBin6Line,
+		},
+		{
+			id: 20,
 			Image: inventoryport,
 			User: "Fortune",
 			email: "fortune@gmail.com",

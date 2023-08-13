@@ -1,0 +1,303 @@
+/** @format */
+.addproductwrp {
+	margin-top: 0px;
+	padding: 40px 2%;
+	row-gap: 30px;
+	display: flex;
+	flex-direction: column;
+}
+.addproductwrp .pageInfo {
+	display: flex;
+	column-gap: 20px;
+	align-items: center;
+}
+.addproductwrp .pageInfo svg {
+	background-color: lightgray;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 40px;
+}
+.addproductwrp .pageInfo svg:hover {
+	cursor: pointer;
+	background-color: rgb(193, 193, 193);
+}
+.addproductwrp form {
+	display: flex;
+	column-gap: 5%;
+	justify-content: space-between;
+}
+.addproductwrp form .leftAdd {
+	width: 100%;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+.addproductwrp form .leftAdd .baseInformation {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	border: 1px solid lightgray;
+	padding: 20px;
+	border-radius: 10px;
+}
+.addproductwrp form .leftAdd .baseInformation .inputWrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3px;
+}
+.addproductwrp form .leftAdd .baseInformation .inputWrapper input {
+	padding: 10px;
+	border: 1px solid lightgray;
+	background-color: white;
+}
+.addproductwrp form .leftAdd .baseInformation .inputWrapper textarea {
+	padding: 10px;
+	border: 1px solid lightgray;
+	background-color: white;
+	border-radius: 5px;
+	resize: vertical;
+}
+.addproductwrp form .leftAdd .details {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	border: 1px solid lightgray;
+	padding: 20px;
+	border-radius: 10px;
+	width: 100%;
+	background-color: whitesmoke;
+}
+.addproductwrp form .leftAdd .details .inputWrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3px;
+}
+.addproductwrp form .leftAdd .details .inputWrapper input {
+	padding: 10px;
+	border: 1px solid lightgray;
+	background-color: white;
+}
+.addproductwrp form .leftAdd .details .inputWrapper textarea {
+	padding: 10px;
+	border: 1px solid lightgray;
+	background-color: white;
+	border-radius: 5px;
+	resize: vertical;
+}
+.addproductwrp form .leftAdd .details .inputContainer {
+	display: flex;
+	column-gap: 10px;
+}
+.addproductwrp form .leftAdd .details .inputContainer .inputWrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3px;
+	width: 100%;
+}
+
+.file {
+	width: 100%;
+	cursor: pointer;
+}
+
+.addproductwrp form .leftAdd .details .inputContainer .inputWrapper input {
+	padding: 10px;
+	border: 1px solid lightgray;
+	background-color: white;
+}
+.addproductwrp form .leftAdd .details .inputContainer .inputWrapper select {
+	padding: 10px;
+	border: 1px solid lightgray;
+	background-color: white;
+	border-radius: 5px;
+	resize: vertical;
+}
+.addproductwrp form .leftAdd .buttonWrapper {
+	display: flex;
+	column-gap: 10px;
+}
+.addproductwrp form .leftAdd .buttonWrapper button {
+	width: 100%;
+	padding: 10px;
+	border: 0px;
+	background-color: rgb(17, 17, 16);
+	color: white;
+	border-radius: 5px;
+}
+.addproductwrp form .leftAdd .buttonWrapper button:hover {
+	cursor: pointer;
+	background-color: rgb(26, 25, 25);
+	color: white;
+	transition: 500ms;
+}
+.addproductwrp form .rightAdd {
+	width: 47.5%;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	padding: 20px;
+	height: fit-content;
+	row-gap: 20px;
+}
+.addproductwrp form .rightAdd .imageWrap {
+	border: 1px solid lightgray;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+.addproductwrp form .rightAdd .image {
+	background-color: white;
+	width: 100%;
+	height: 400px;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.addproductwrp form .rightAdd .image svg {
+	font-size: 50px;
+}
+.addproductwrp form .rightAdd .image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+@media (max-width: 1300px) {
+	.addproductwrp {
+		padding: 40px;
+	}
+	.addproductwrp .pageInfo svg {
+		padding: 8px;
+		font-size: 35px;
+	}
+	.addproductwrp h2 {
+		font-size: 20px;
+	}
+	.addProductWrapper form .leftAdd {
+		padding: 15px;
+	}
+	.addproductwrp form .leftAdd .baseInformation {
+		padding: 15px;
+	}
+	.addproductwrp form .leftAdd .baseInformation .inputWrapper label {
+		font-size: 14px;
+	}
+	.addproductwrp form .leftAdd .baseInformation .inputWrapper input {
+		padding: 6px 10px;
+	}
+	.addproductwrp form .leftAdd .baseInformation .inputWrapper textarea {
+		padding: 6px 10px;
+	}
+	.addproductwrp form .leftAdd .details {
+		padding: 15px;
+	}
+	.addproductwrp form .leftAdd .details .inputWrapper label {
+		font-size: 14px;
+	}
+	.addproductwrp form .leftAdd .details .inputWrapper input {
+		padding: 6px 10px;
+	}
+	.addproductwrp form .leftAdd .details .inputWrapper textarea {
+		padding: 6px 10px;
+	}
+	.addproductwrp form .leftAdd .details .inputContainer .inputWrapper input {
+		padding: 6px 10px;
+	}
+	.addProductWrapper
+		form
+		.leftAdd
+		.details
+		.inputContainer
+		.inputWrapper
+		select {
+		padding: 6px 10px;
+	}
+	.addproductwrp form .rightAdd {
+		padding: 15px;
+	}
+	.addproductwrp form .rightAdd .image {
+		height: 250px;
+	}
+}
+@media (max-width: 1000px) {
+	.addproductwrp {
+		margin-left: 0px;
+		padding: 40px 3%;
+	}
+	.addproductwrp form {
+		column-gap: 3%;
+	}
+	.addproductwrp form .leftAdd {
+		width: 100%;
+	}
+	.addproductwrp form .rightAdd {
+		width: 48.5%;
+	}
+}
+@media (max-width: 750px) {
+	.addproductwrp form {
+		flex-direction: column-reverse;
+		row-gap: 30px;
+	}
+	.addproductwrp form .leftAdd {
+		width: 100%;
+	}
+	.addproductwrp form .rightAdd {
+		width: 70%;
+	}
+	.addproductwrp form .rightAdd .image {
+		height: 300px;
+	}
+}
+@media (max-width: 600px) {
+	.addproductwrp form .rightAdd {
+		width: 100%;
+	}
+}
+@media (max-width: 500px) {
+	.addproductwrp form .rightAdd {
+		width: 100%;
+	}
+	.addproductwrp form .rightAdd .image {
+		height: 250px;
+	}
+}
+@media (max-width: 400px) {
+	.addproductwrp h2 {
+		font-size: 18px;
+	}
+	.addproductwrp .pageInfo {
+		column-gap: 10px;
+	}
+	.addproductwrp form .leftAdd .baseInformation {
+		padding: 0px;
+		border: 0px;
+	}
+	.addproductwrp form .leftAdd .baseInformation .inputWrapper label {
+		font-size: 13.5px;
+	}
+	.addproductwrp form .leftAdd .details {
+		padding: 0px;
+		border: 0px;
+	}
+	.addproductwrp form .leftAdd .details .inputWrapper label {
+		font-size: 13.5px;
+	}
+	.addproductwrp form .leftAdd .buttonWrapper button {
+		font-size: 12px;
+	}
+	.addproductwrp form .rightAdd .imageWrap {
+		padding: 0px;
+		border: 0px;
+	}
+	.addproductwrp form .rightAdd .image {
+		height: 200px;
+	}
+} /*# sourceMappingURL=product.css.map */
