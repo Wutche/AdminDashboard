@@ -1,0 +1,54 @@
+/** @format */
+
+.inventorywrp {
+	padding: 20px 3%;
+}
+
+.pageinfo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.pageinfo h1 {
+	font-family: "Lobster", cursive;
+	font-weight: 200;
+}
+
+.pageinfo a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	background-color: black;
+	width: 15%;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+}
+
+.inventorytable {
+	margin-top: 3rem;
+}
+
+.inventoryfilter {
+	margin: 30px 0px;
+}
+
+.inventoryfilter > select {
+	border: none;
+	width: 10%;
+	height: 35px;
+	outline: none;
+	padding: 0px 5px;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	font-family: "Poppins", sans-serif;
+}
+
+.inventoryfilter > select option {
+	background-color: white;
+	color: black;
+	font-family: "Poppins", sans-serif;
+}

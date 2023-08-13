@@ -10,6 +10,7 @@ const TableData = () => {
 			name: "Wutche",
 			productName: "Cactus",
 			payment: "$12.33",
+			category: "flowering",
 			Date: "01/12/2023",
 			status: "Pending",
 		},
@@ -18,6 +19,7 @@ const TableData = () => {
 			name: "Sophia",
 			productName: "Cactus",
 			payment: "$12.33",
+			category: "non-flowering",
 			Date: "11/10/2023",
 			status: "Delivered",
 		},
@@ -26,6 +28,7 @@ const TableData = () => {
 			name: "Obinna",
 			productName: "Cactus",
 			payment: "$12.33",
+			category: "indoor",
 			Date: "10/3/2023",
 			status: "Pending",
 		},
@@ -34,6 +37,7 @@ const TableData = () => {
 			name: "Godrice",
 			productName: "Cactus",
 			payment: "$12.33",
+			category: "outdoor",
 			Date: "12/12/2023",
 			status: "Cancelled",
 		},
@@ -42,6 +46,7 @@ const TableData = () => {
 			name: "Henshaw",
 			productName: "Cactus",
 			payment: "$12.33",
+			category: "succulents",
 			Date: "05/11/2023",
 			status: "Delivered",
 		},
@@ -53,6 +58,7 @@ const TableData = () => {
 			<td>{element.name}</td>
 			<td>{element.productName}</td>
 			<td>{element.payment}</td>
+			<td>{element.category}</td>
 			<td>{element.Date}</td>
 			<td>{element.status}</td>
 		</tr>
@@ -64,9 +70,10 @@ const TableData = () => {
 				<thead>
 					<tr>
 						<th>OrderID</th>
-						<th>Name</th>
+						<th>Users</th>
 						<th>Product Name</th>
 						<th>Payment</th>
+						<th>Category</th>
 						<th>Date</th>
 						<th>Status</th>
 					</tr>

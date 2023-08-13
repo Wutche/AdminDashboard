@@ -12,11 +12,11 @@ import {
 
 const data = [
 	{
-		month: "January",
+		month: "Jan",
 		price: 40000,
 	},
 	{
-		month: "February",
+		month: "Feb",
 		price: 20000,
 	},
 	{
@@ -40,23 +40,23 @@ const data = [
 		price: 42000,
 	},
 	{
-		month: "August",
+		month: "Aug",
 		price: 10000,
 	},
 	{
-		month: "September",
+		month: "Sept",
 		price: 30000,
 	},
 	{
-		month: "October",
+		month: "Oct",
 		price: 20000,
 	},
 	{
-		month: "November",
+		month: "Nov",
 		price: 90000,
 	},
 	{
-		month: "December",
+		month: "Dec",
 		price: 60000,
 	},
 ];

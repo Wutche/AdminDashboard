@@ -1,6 +1,7 @@
 /** @format */
 .adminwrp {
 	background-color: rgb(255, 250, 244);
+	height: 100vh;
 }
 
 .orderhero {

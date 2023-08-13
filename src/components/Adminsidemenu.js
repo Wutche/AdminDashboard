@@ -9,6 +9,7 @@ import { VscFeedback } from "react-icons/vsc";
 import { AiFillSetting } from "react-icons/ai";
 import { BiLogOutCircle } from "react-icons/bi";
 import { SiAdobeaudition } from "react-icons/si";
+import { HiUserGroup } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
 
 const Adminsidemenu = () => {
@@ -36,12 +37,20 @@ const Adminsidemenu = () => {
 						Orders
 					</NavLink>
 
-					<NavLink>
+					<NavLink to="/inventory">
 						{" "}
 						<span>
 							<MdInventory />
 						</span>
 						Inventory
+					</NavLink>
+
+					<NavLink>
+						{" "}
+						<span>
+							<HiUserGroup />
+						</span>
+						Users
 					</NavLink>
 
 					<NavLink>

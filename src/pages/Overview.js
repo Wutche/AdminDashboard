@@ -30,7 +30,7 @@ const Overview = () => {
 								<h1>Top Accessories</h1>
 								<p>Sales performance by accessories</p>
 								<div className="accessory">
-									<div className="profile">
+									<div className="accessoryprofile">
 										<div className="profileimg">
 											<img src={plant} alt="" />
 											<p>Plant pot</p>
@@ -39,7 +39,7 @@ const Overview = () => {
 											<p>$20,000</p>
 										</div>
 									</div>
-									<div className="profile">
+									<div className="accessoryprofile">
 										<div className="profileimg">
 											<img src={plant} alt="" />
 											<p>Plant pot</p>
@@ -48,7 +48,7 @@ const Overview = () => {
 											<p>$20,000</p>
 										</div>
 									</div>
-									<div className="profile">
+									<div className="accessoryprofile">
 										<div className="profileimg">
 											<img src={plant} alt="" />
 											<p>Plant pot</p>
@@ -57,7 +57,7 @@ const Overview = () => {
 											<p>$20,000</p>
 										</div>
 									</div>
-									<div className="profile">
+									<div className="accessoryprofile">
 										<div className="profileimg">
 											<img src={plant} alt="" />
 											<p>Plant pot</p>

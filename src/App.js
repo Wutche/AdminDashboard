@@ -7,7 +7,10 @@ import Adminroot from "./layouts/Adminroot";
 import Overview from "./pages/Overview";
 import Order from "./pages/Order";
 import Login from "./pages/Login";
+import Inventory from "./pages/Inventory";
 import Settings from "./pages/Settings";
+import AddProduct from "./pages/AddProduct";
+
 function App() {
 	return (
 		<>
@@ -16,7 +19,9 @@ function App() {
 					<Route path="/" element={<Login />} />
 					<Route path="/overview" element={<Overview />} />
 					<Route path="/order" element={<Order />} />
+					<Route path="/inventory" element={<Inventory />} />
 					<Route path="/settings" element={<Settings />} />
+					<Route path="/addproducts" element={<AddProduct />} />
 				</Routes>
 			</Router>
 		</>
